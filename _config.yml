@@ -1,6 +1,6 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: Oscar Rodríguez Rocha
+description: I'm a researcher interested in the Semantic Web, Linked Data, Knowledge Representation and Context-Aware Mobile Computing
+meta_description: "This is my personal Site, I'm a researcher interested in the Semantic Web, Linked Data, Knowledge Representation and Context-Aware Mobile Computing"
 
 aboutPage: true
 
@@ -9,15 +9,15 @@ highlighter: pygments
 
 paginate: 20
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
-google_analytics: 'UA-XXXXXXXX-X'
+domain_name: 'http://oscarrodriguez.me'
+google_analytics: ''
 disqus: false
 disqus_shortname: 'your-disqus-shortname'
 
 # Details for the RSS feed generator
 url:            'http://your-blog-url.example.com'
-author:         'Your Name'
-authorTwitter:  'YourTwitterUsername'
+author:         'Oscar Rodríguez Rocha'
+authorTwitter:  'oscarrodriguez'
 
 permalink:       /:year/:title/
 
