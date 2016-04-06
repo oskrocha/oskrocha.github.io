@@ -34,3 +34,8 @@ function retina() {
 };
  
 $(document).ready(retina);
+
+$('.expand-link').click(function(){
+    $(this).next('pre').slideToggle();
+    return false;
+});
