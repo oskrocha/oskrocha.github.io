@@ -1,0 +1,21 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Oscar Rodríguez Rocha</foaf:name>
+<foaf:title>PhD</foaf:title>
+<foaf:givenname>Oscar</foaf:givenname>
+<foaf:family_name>Rodríguez Rocha</foaf:family_name>
+<foaf:mbox_sha1sum>5dcf3116512d1f7f101c966225e169a15063d09d</foaf:mbox_sha1sum>
+<foaf:homepage rdf:resource="http://oscarrodriguez.me "/>
+<foaf:workplaceHomepage rdf:resource="http://wimmics.inria.fr"/>
+<foaf:workInfoHomepage rdf:resource="Postdoc Researcher"/></foaf:Person>
+</rdf:RDF>

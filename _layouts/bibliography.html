@@ -1,0 +1,11 @@
+---
+---
+{{reference}}
+
+<div class="reference-links">
+  <p class="expand-link"><a href="#">Bibtex</a></p>
+  <pre class="expand-content">{{entry.bibtex}}</pre>
+  {% if entry.doi %}
+  DOI: <a href="http://dx.doi.org/{{entry.doi}}">{{entry.doi}}</a>
+  {% endif %}
+</div>
