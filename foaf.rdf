@@ -15,7 +15,7 @@
 <foaf:givenname>Oscar</foaf:givenname>
 <foaf:family_name>Rodríguez Rocha</foaf:family_name>
 <foaf:mbox_sha1sum>5dcf3116512d1f7f101c966225e169a15063d09d</foaf:mbox_sha1sum>
-<foaf:homepage rdf:resource="http://oscarrodriguez.me "/>
-<foaf:workplaceHomepage rdf:resource="http://wimmics.inria.fr"/>
+<foaf:homepage rdf:resource="http://oscarrodriguez.me"/>
+<foaf:workplaceHomepage rdf:resource="http://dbpedia.org/page/French_Institute_for_Research_in_Computer_Science_and_Automation"/>
 <foaf:workInfoHomepage rdf:resource="Postdoc Researcher"/></foaf:Person>
 </rdf:RDF>
