@@ -15,9 +15,11 @@ disqus: false
 disqus_shortname: 'your-disqus-shortname'
 
 # Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
+url:            'http://oscarrodriguez.me'
 author:         'Oscar Rodríguez Rocha'
 authorTwitter:  'oscarrodriguez'
+
+exclude: ['LICENSE', 'Rakefile', 'README.md']
 
 permalink:       /:year/:title/
 
