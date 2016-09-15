@@ -19,7 +19,7 @@ url:            'http://oscarrodriguez.me'
 author:         'Oscar Rodríguez Rocha'
 authorTwitter:  'oscarrodriguez'
 
-exclude: ['LICENSE', 'Rakefile', 'README.md']
+exclude: ['LICENSE', 'Rakefile']
 
 permalink:       /:year/:title/
 
@@ -58,7 +58,7 @@ scholar:
   group_by: type, year
   group_order: ascending
 
-  bibliography: ORR_dblp
+  bibliography: ORR_dblp_092016
   bibliography_template: bibliography
 
   details_dir:    bibliography
