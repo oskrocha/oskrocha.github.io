@@ -1,6 +1,6 @@
 name: Oscar Rodríguez Rocha
-description: I'm a researcher interested in the Semantic Web, Linked Data, Knowledge Representation, eEducation and Context-Aware Mobile Computing
-meta_description: "This is my personal Site, I'm a researcher interested in the Semantic Web, Linked Data, Knowledge Representation, eEducation and Context-Aware Mobile Computing"
+description: I'm a researcher interested in the Semantic Web, Linked Data, Knowledge Engineering, eEducation and Context-Aware Mobile Computing
+meta_description: "This is my personal Site, I'm a researcher interested in the Semantic Web, Linked Data, Knowledge Engineering, eEducation and Context-Aware Mobile Computing"
 
 aboutPage: true
 
@@ -47,7 +47,7 @@ gems: ['jekyll/scholar']
 
 scholar:
   style: assets/bibliography/ieee-with-url.csl
-  locale: 
+  locale:
 
   sort_by: year
   order: descending
