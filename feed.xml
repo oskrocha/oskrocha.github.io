@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Oscar Rodríguez Rocha</title>
-    <description>I&#39;m a research engineer interested in Semantic Web and Linked Data, Knowledge Extraction and Representation, Machine Learning and NLP, Context Awareness and Ubiquitous Computing</description>
+    <description>I&#39;m a research engineer interested in Semantic Web and Linked Data, Knowledge Extraction and Representation, Context Awareness and Ubiquitous Computing, Machine Learning</description>
     <link>http://oscarrodriguez.me</link>
     <atom:link href="http://oscarrodriguez.me/feed.xml" rel="self" type="application/rss+xml" />
     
