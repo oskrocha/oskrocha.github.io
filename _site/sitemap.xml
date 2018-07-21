@@ -8,7 +8,22 @@
     <url>
       <loc>http://oscarrodriguez.me/about/</loc>
       
-        <lastmod>2017-08-04T15:48:26+02:00</lastmod>
+        <lastmod>2018-07-21T23:56:18+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://oscarrodriguez.me/contact/</loc>
+      
+        <lastmod>2018-07-21T23:56:18+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -23,7 +38,7 @@
     <url>
       <loc>http://oscarrodriguez.me/feed.xml</loc>
       
-        <lastmod>2017-08-04T15:48:26+02:00</lastmod>
+        <lastmod>2018-07-21T23:56:18+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -38,7 +53,7 @@
     <url>
       <loc>http://oscarrodriguez.me/</loc>
       
-        <lastmod>2017-08-04T15:48:26+02:00</lastmod>
+        <lastmod>2018-07-21T23:56:18+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -53,7 +68,7 @@
     <url>
       <loc>http://oscarrodriguez.me/publications/</loc>
       
-        <lastmod>2017-08-04T15:48:26+02:00</lastmod>
+        <lastmod>2018-07-21T23:56:18+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -64,6 +79,36 @@
     </url>
     
   
+    
+    <url>
+      <loc>http://oscarrodriguez.me/scientific/</loc>
+      
+        <lastmod>2018-07-21T23:56:18+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://oscarrodriguez.me/teaching/</loc>
+      
+        <lastmod>2018-07-21T23:56:18+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
     
   
 </urlset>

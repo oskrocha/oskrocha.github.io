@@ -4,15 +4,11 @@ permalink: publications/
 profile: true
 ---
 
-### My list of publications
+# Publications
 
-This list was taken in September 2016 from [DBLP](http://dblp.uni-trier.de/pers/hd/r/Rocha:Oscar_Rodriguez). Please consider that some publications may be missing because they have not yet been indexed.
-
-- Journals
+List of publications updated on July 21, 2018. A limited list is also available on my [DBLP](https://dblp.uni-trier.de/pers/hd/r/Rocha:Oscar_Rodriguez) profile page.
 
 {% bibliography --query @article %}
-
-- Conferences and workshops
 
 {% bibliography --query @inproceedings %}
 

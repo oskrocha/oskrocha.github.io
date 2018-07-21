@@ -59,7 +59,7 @@ body {
 
 h1 {
 	font-size: 30px;
-	letter-spacing: -1px;
+	/* letter-spacing: -1px; */
 	color: #222;
 	font-weight: bold;
 }
@@ -72,8 +72,7 @@ h2 {
 /* Bibliography style */
 
 ul.bibliography{
-
-	margin: 10px;
+	margin: 5px;
 }
 
 ul.bibliography li{
@@ -108,15 +107,15 @@ ul.bibliography li i{
 /* End of bibliography style */
 
 .profile #wrapper {
-	padding: 100px 40px 0px;
+	padding: 40px 40px 0px;
 	max-width: 600px;
 	margin: 0 auto;
 }
 
 .profile #header {
 	border-bottom: 1px solid #eee;
-	margin-bottom: 40px;
-	padding-bottom: 40px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
 	text-align: center;
 	position: relative;
 }
@@ -132,18 +131,17 @@ ul.bibliography li i{
 .profile h1 {
 	font-weight: 400;
 	letter-spacing: 0px;
-	font-size: 20px;
+	font-size: 22px;
 	color: #222;
 }
 
 .profile h2 {
-	font-size: 20px;
-	  font-weight: 300;
-	  color: #aaa;
-	  margin-top: 10px;
-	  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	  font-style: normal;
-
+	font-size: 15px;
+	font-weight: 300;
+	color: #aaa;
+	margin-top: 5px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
 }
 
 nav.main-nav {
@@ -220,11 +218,11 @@ a,
 	transition: all 0.15s ease;
 }
 
-ul 	{ margin:0; padding:0; }
-li	{ list-style-type:circle; list-style-position:inside; }
+ul 	{ margin:2px; padding:2px; }
+li	{ list-style-type:circle; list-style-position:outside; margin: 8px 2px;}
 
 /* Line Height */
-#post-body, p { line-height:1.7; }
+#post-body, p { line-height:1.7; margin-bottom: 10px;}
 
 b, strong { font-weight: 500;
   color: #1E2025; }
@@ -249,14 +247,16 @@ em, i { font-style: italic; }
 
 .home h1 {
 	font-size: 30px;
-	letter-spacing: -1px;
+	/* letter-spacing: -1px; */
 	color: #222;
 	font-weight: bold;
+    margin: 10px 2px;
 }
 
 .home h2 {
-	font: italic 19px/1.3em Georgia,serif;
+	font: italic 25px/1.3em Georgia,serif;
 	color: #bbb;
+    margin: 15px 2px;
 }
 
 .post header {
@@ -298,7 +298,7 @@ em, i { font-style: italic; }
 
 h3, h4, h5 { color:#333; }
 
-h3 { font-size:20px; font-weight: 400; }
+h3 { font-size:20px; font-weight: 400; font-style: italic; margin-bottom: 5px;}
 h4 { font-size:16px; font-weight:bold; }
 h5 { font-size:15px; font-weight: bold; }
 
@@ -468,8 +468,8 @@ Post List
 
 #footer {
 	box-shadow: inset 0 1px 0 #eee;
-	padding: 40px 0 0 0;
-	margin-top: 100px;
+	padding: 20px 0 0 0;
+	margin-top: 40px;
 }
 
 /* Post Page */

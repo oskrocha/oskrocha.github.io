@@ -1,8 +1,9 @@
 name: Oscar Rodríguez Rocha
-description: I'm a research engineer interested in Semantic Web and Linked Data, Knowledge Extraction and Representation, Context Awareness and Ubiquitous Computing, Machine Learning
-meta_description: "This is my personal Site, I'm a research engineer interested in Semantic Web and Linked Data, Knowledge Extraction and Representation, Context Awareness and Ubiquitous Computing, Machine Learning"
+description: Research Engineer
+description2: Ph.D. in Computer and Control Engineering
+meta_description: "Personal website of Oscar Rodríguez Rocha"
 
-aboutPage: true
+aboutPage: false
 
 markdown: redcarpet
 highlighter: pygments
@@ -56,9 +57,9 @@ scholar:
   replace_strings: true
 
   group_by: type, year
-  group_order: ascending
+  group_order: descending
 
-  bibliography: ORR_dblp_052017
+  bibliography: ORR_21072018
   bibliography_template: bibliography
 
   details_dir:    bibliography
