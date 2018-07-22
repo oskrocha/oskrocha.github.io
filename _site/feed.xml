@@ -3,8 +3,8 @@
   <channel>
     <title>Oscar Rodríguez Rocha</title>
     <description>Research Engineer</description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://oscarrodriguez.me</link>
+    <atom:link href="http://oscarrodriguez.me/feed.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
