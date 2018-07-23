@@ -15,11 +15,9 @@ profile: true
 **Email:** [oscar.rodriguez-rocha@inria.fr](mailto:oscar.rodriguez-rocha@inria.fr)
 
 
-**Office 426**
+[Polytech Nice Sophia - Campus SophiaTech](https://goo.gl/maps/r6GEXKQZqDH2)
 
-Polytech Nice Sophia - [Campus SophiaTech](https://goo.gl/maps/r6GEXKQZqDH2)
-
-*Bâtiment Templiers 1*
+*Bâtiment Templiers 1* - **Office 426**
 
 *930, Route des Colles - BP145*
 
