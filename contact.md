@@ -15,7 +15,7 @@ profile: true
 **Email:** [oscar.rodriguez-rocha@inria.fr](mailto:oscar.rodriguez-rocha@inria.fr)
 
 
-**Office 420**
+**Office 426**
 
 Polytech Nice Sophia - [Campus SophiaTech](https://goo.gl/maps/r6GEXKQZqDH2)
 
