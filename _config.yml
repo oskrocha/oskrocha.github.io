@@ -1,7 +1,7 @@
 name: Oscar Rodríguez Rocha
 description: Research Engineer
 description2: Ph.D. in Computer and Control Engineering
-meta_description: "Personal website of Oscar Rodríguez Rocha"
+meta_description: 'Personal website of Oscar Rodríguez Rocha'
 
 aboutPage: false
 
@@ -44,7 +44,9 @@ defaults:
         values:
             layout: post
 
-gems: ['jekyll/scholar']
+plugins:
+  - jekyll/scholar
+  - jekyll-paginate
 
 scholar:
   # style: assets/bibliography/ieee-with-url.csl

@@ -8,6 +8,10 @@ profile: true
 
 ## Programme Committees
 
+### 2019
+
+- [RIVF 2019](http://rivf2019.udn.vn/Datatinh.aspx?id=48&idmenu=48) The 2019 IEEE-RIVF Internation Conference on Computing and Communication Technologies
+
 ### 2018
 
 - [EKAW 2018](https://project.inria.fr/ekaw2018/program-committee/) 21th International Conference on Knowledge Engineering and Knowledge Management
