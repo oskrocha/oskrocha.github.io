@@ -4,7 +4,7 @@ profile: true
 
 I'm a Research Engineer currently working at the [Inria Sophia-Antipolis](http://www.inria.fr/centre/sophia) research center for the [WIMMICS](http://wimmics.inria.fr) team.
 
-I'm mainly interested in **Artificial Intelligence (AI)**, more specifically in **Knowledge Representation (KR)** in the Semantic Web. I am currently focused on the automatic generation of educational quizzes using Semantic Web technologies and Linked Data. My interests and experience also include **Machine Learning** and **Recommendation Systems**.
+I'm interested in **Artificial Intelligence (AI)** and the Semantic Web applied to the educational domain, more specifically **Knowledge representation and reasoning (KR<sup>2</sup>)**, **Machine Learning** and **NLP**. I'm also interested in **Recommendation Systems**.
 
 I worked previously at the [Politecnico di Torino](http://www.polito.it) in Italy for the [SoftEng](http://softeng.polito.it) research group as postdoc researcher.
 
