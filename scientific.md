@@ -10,6 +10,12 @@ profile: true
 
 ### 2019
 
+- [KEOD 2019](http://www.keod.ic3k.org/ProgramCommittee.aspx) 11th International Conference on Knowledge Engineering and Ontology Development
+
+- [Semantics 2019] (https://2019.semantics.cc/committee) SEMANTiCS Conference 2019
+
+- [IJCAI 2019] (https://www.ijcai19.org/program-committee.html) The 28th International Joint Conference on Artificial Intelligence
+
 - [RIVF 2019](http://rivf2019.udn.vn/Datatinh.aspx?id=48&idmenu=48) The 2019 IEEE-RIVF Internation Conference on Computing and Communication Technologies
 
 ### 2018
