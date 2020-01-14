@@ -6,24 +6,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/about/</loc>
+      <loc>http://oscarrodriguez.me/about/</loc>
       
-        <lastmod>2019-07-01T14:26:45+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/contact/</loc>
-      
-        <lastmod>2019-07-01T14:26:45+02:00</lastmod>
+        <lastmod>2020-01-14T09:30:03-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -36,24 +21,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/feed.xml</loc>
+      <loc>http://oscarrodriguez.me/feed.xml</loc>
       
-        <lastmod>2019-07-01T14:26:45+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/</loc>
-      
-        <lastmod>2019-07-01T14:26:45+02:00</lastmod>
+        <lastmod>2020-01-14T09:30:03-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -66,9 +36,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/publications/</loc>
+      <loc>http://oscarrodriguez.me/</loc>
       
-        <lastmod>2019-07-01T14:26:45+02:00</lastmod>
+        <lastmod>2020-01-14T09:30:03-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -81,9 +51,24 @@
   
     
     <url>
-      <loc>http://localhost:4000/scientific/</loc>
+      <loc>http://oscarrodriguez.me/publications/</loc>
       
-        <lastmod>2019-07-01T14:26:45+02:00</lastmod>
+        <lastmod>2020-01-14T09:30:03-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://oscarrodriguez.me/scientific/</loc>
+      
+        <lastmod>2020-01-14T09:30:03-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -98,9 +83,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/teaching/</loc>
+      <loc>http://oscarrodriguez.me/teaching/</loc>
       
-        <lastmod>2019-07-01T14:26:45+02:00</lastmod>
+        <lastmod>2020-01-14T09:30:03-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
