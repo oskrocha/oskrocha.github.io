@@ -5,7 +5,7 @@ meta_description: 'Personal website of Oscar Rodríguez Rocha'
 
 aboutPage: false
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 
 paginate: 20
