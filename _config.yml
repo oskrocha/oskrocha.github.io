@@ -62,7 +62,7 @@ scholar:
   group_by: type, year
   group_order: descending
 
-  bibliography: ORR_21072018
+  bibliography: ORR_dblp
   bibliography_template: bibliography
 
   details_dir:    bibliography

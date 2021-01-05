@@ -6,7 +6,7 @@ profile: true
 
 # Publications
 
-List of publications updated on July 21, 2018. A limited list is also available on my [DBLP](https://dblp.uni-trier.de/pers/hd/r/Rocha:Oscar_Rodriguez) profile page.
+Limited list of publications taken from my [DBLP](https://dblp.uni-trier.de/pers/hd/r/Rocha:Oscar_Rodriguez) profile page in January 2021.
 
 {% bibliography --query @article %}
 
