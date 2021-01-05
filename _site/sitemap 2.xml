@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+  
+    
+    <url>
+      <loc>http://oscarrodriguez.me/about/</loc>
+      
+        <lastmod>2020-09-10T07:59:06-05:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://oscarrodriguez.me/feed.xml</loc>
+      
+        <lastmod>2020-09-10T07:59:06-05:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://oscarrodriguez.me/</loc>
+      
+        <lastmod>2020-09-10T07:59:06-05:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://oscarrodriguez.me/publications/</loc>
+      
+        <lastmod>2020-09-10T07:59:06-05:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://oscarrodriguez.me/scientific/</loc>
+      
+        <lastmod>2020-09-10T07:59:06-05:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://oscarrodriguez.me/teaching/</loc>
+      
+        <lastmod>2020-09-10T07:59:06-05:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+</urlset>
