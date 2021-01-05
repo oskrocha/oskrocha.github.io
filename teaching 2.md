@@ -8,17 +8,17 @@ profile: true
 
 ## Universitè Nice-Sophia Antipolis, Nice, France.
 
-- ### 2017-2020 - Knowledge Engineering (IC), Master IFI - (English/French)
+- ### 2017-2019 - Web Languages - (French)
     - Labs
-    - Knowledge Acquisition from text
 
 - ### 2016-2019 - Semantic Web technologies (WebSem), Master IFI - (English/French)
     - Labs
     - Introduction to DBpedia
     - SKOS: Simple Knowledge Organization System
 
-- ### 2017-2019 - Web Languages - (French)
+- ### 2017-2019 - Knowledge Engineering (IC), Master IFI - (English/French)
     - Labs
+    - Knowledge Acquisition
 
 - ### 2016 - Man-machine interactions/interfaces - (French)
     - Labs
