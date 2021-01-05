@@ -6,10 +6,9 @@ I'm a Research Engineer at <i class="fa fa-rocket"></i> [Teach on Mars](https://
 
 
 My research interests are: 
-- Graph-based Knowledge representation and Reasoning
-- Knowledge Graph Embeddings
+- Graph-based Knowledge Representation and Reasoning
+- Machine Learning - Graph Representation Learning (GRL)
 - Recommender Systems
-- Machine Learning
 
 
 I'm a former Research Engineer (and currently, external collaborator) at the [Inria Sophia-Antipolis](http://www.inria.fr/centre/sophia) research center for the [WIMMICS](http://wimmics.inria.fr) team. Previously, I was a postdoc researcher at the [Politecnico di Torino](http://www.polito.it) in Italy for the [SoftEng](http://softeng.polito.it) research group.
