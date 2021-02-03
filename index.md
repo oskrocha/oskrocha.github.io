@@ -2,17 +2,14 @@
 profile: true
 ---
 
-I'm a Research Engineer at <i class="fa fa-rocket"></i> [Teach on Mars](https://www.teachonmars.com/) <i class="fa fa-rocket"></i> working on **Artificial Intelligence (AI)** in education. 
+I'm currently the head of Data Science & AI at <i class="fa fa-rocket"></i> [Teach on Mars](https://www.teachonmars.com/) <i class="fa fa-rocket"></i>. I'm  mainly interested in AI in education, concretely on:
 
-
-My research interests are: 
-- Graph-based Knowledge Representation and Reasoning
+- Knowledge Representation and Reasoning
+- Semantic Web and Linked Data
 - Machine Learning - Graph Representation Learning (GRL)
 - Recommender Systems
 
 
-I'm a former Research Engineer (and currently, external collaborator) at the [Inria Sophia-Antipolis](http://www.inria.fr/centre/sophia) research center for the [WIMMICS](http://wimmics.inria.fr) team. Previously, I was a postdoc researcher at the [Politecnico di Torino](http://www.polito.it) in Italy for the [SoftEng](http://softeng.polito.it) research group.
-
-I hold a PhD in Information and Systems Engineering obtained from the Politecnico di Torino in Italy, my thesis was about how to improve mobile services by applying Semantic Web technologies and exploiting Linked Data, Context Awareness and User-Generated Content, it was part of a collabration with the [Telecom Italia’s](http://www.telecomitalia.com/tit/en/about-us/business/activities/telecom-italia-lab.html) Context Awareness research group.
+I'm an external collaborator of [WIMMICS](http://wimmics.inria.fr), a joint research team between [Inria Sophia-Antipolis](http://www.inria.fr/centre/sophia) Sophia Antipolis - Méditerranée and [I3S](https://www.i3s.unice.fr) (CNRS and Université Côte d'Azur), where I worked for almost 5 years doing research on AI in education. I also worked previously as a postdoc researcher at the [Politecnico di Torino](http://www.polito.it) in Italy for the [SoftEng](http://softeng.polito.it) research group and I hold a PhD in Information and Systems Engineering obtained also from the Politecnico di Torino.
 
 {% include footer.html %}
