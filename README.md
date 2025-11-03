@@ -20,6 +20,27 @@ jekyll build
 jekyll serve
 ```
 
+### Using Docker
+Alternatively, you can use Docker to build and test the website. This avoids having to install Jekyll and its dependencies on your local machine.
+
+First, ensure you have a `Gemfile` in the root of your project with the following content:
+```ruby
+source "https://rubygems.org"
+gem "jekyll"
+gem "jekyll-scholar"
+```
+
+**Build** the website with Docker:
+```sh
+docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -it jekyll/builder jekyll build
+```
+
+**Test** the website with Docker:
+```sh
+docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -p 4000:4000 -it jekyll/builder jekyll serve --host 0.0.0.0
+```
+The site will be available at `http://localhost:4000`.
+
 ## Publishing
 Execute the following script:
 ```

@@ -8,8 +8,8 @@ profile: true
 
 ## Universitè Nice-Sophia Antipolis, Nice, France.
 
-- ### 2017-2020 - Knowledge Engineering (IC), Master IFI - (English/French)
-    - Knowledge Acquisition from text
+- ### 2017-2025 - Knowledge Engineering (IC), Master IFI - (English/French)
+    - Knowledge extraction from text
     - Labs
 
 - ### 2016-2019 - Semantic Web technologies (WebSem), Master IFI - (English/French)

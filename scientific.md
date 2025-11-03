@@ -8,7 +8,21 @@ profile: true
 
 ## Programme Committee
 
+### 2023
+
+- [SAC 2023](https://www.sigapp.org/sac/sac2023/index.html) ACM Symposium on Applied Computing 2023 - The Semantic Web and Applications (SWA) 
+
+### 2022
+
+- [EKAW 2022](https://ekaw2022.inf.unibz.it) The 23rd International Conference on Knowledge Engineering and Knowledge Management
+
+- [SAC 2022](https://sites.google.com/view/sac2022-swa/home) ACM Symposium on Applied Computing 2022 - The Semantic Web and Applications (SWA) 
+
 ### 2021
+
+- [Semantics 2021](https://2021-eu.semantics.cc/) SEMANTiCS Conference 2021
+
+- [KEOD-2021](https://keod.scitevents.org/ProgramCommittee.aspx?y=2021) 13th International Conference on Knowledge Engineering and Ontology Development  
 
 - [AAAI 2021](https://aaai.org/Conferences/AAAI-21/) The 35th AAAI Conference on Artificial Intelligence
 
