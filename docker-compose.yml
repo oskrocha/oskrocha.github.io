@@ -1,0 +1,19 @@
+services:
+  site:
+    build: .
+    working_dir: /app
+    environment:
+      # Defaults match oscar's Mac (id -u / id -g); entrypoint creates a
+      # matching passwd/group entry and drops root before running anything,
+      # so files created in the bind mount aren't root-owned on the host.
+      DOCKER_UID: "${DOCKER_UID:-501}"
+      DOCKER_GID: "${DOCKER_GID:-20}"
+      HOME: /tmp
+      SSH_AUTH_SOCK: /ssh-agent
+      BUNDLE_PATH: vendor/bundle
+    volumes:
+      - .:/app
+      # Docker Desktop for Mac's host ssh-agent forwarding socket.
+      - /run/host-services/ssh-auth.sock:/ssh-agent
+      - ~/.gitconfig:/etc/gitconfig:ro
+      - ~/.ssh/known_hosts:/tmp/.ssh/known_hosts:ro
