@@ -100,9 +100,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	--accent:       #2458C9;
 	--accent-soft:  #E9EFFC;
 
-	/* Code blocks stay dark regardless of color scheme. */
-	--code-bg: #1B1B1F;
-	--code-fg: #D8D7D2;
+	/* Code blocks: a quiet recessed panel, themed like everything else. */
+	--code-bg: #F3F2EF;
+	--code-fg: #2B2B2E;
 
 	--font-serif: 'Libre Caslon Text', Georgia, 'Times New Roman', serif;
 	--font-sans:  'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -135,6 +135,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		--line-strong:  #3B3E45;
 		--accent:       #7FA0EE;
 		--accent-soft:  #202A42;
+		--code-bg:      #0E0F12;
+		--code-fg:      #D8D7D2;
 	}
 }
 
@@ -149,6 +151,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	--line-strong:  #3B3E45;
 	--accent:       #7FA0EE;
 	--accent-soft:  #202A42;
+	--code-bg:      #0E0F12;
+	--code-fg:      #D8D7D2;
 }
 
 /* Base */
@@ -312,6 +316,7 @@ pre	{
 	padding: 20px;
 	overflow: auto;
 	border-radius: var(--radius);
+	border: 1px solid var(--line);
 	background: var(--code-bg);
 	font-size: 13px;
 	line-height: 1.5em;
@@ -451,13 +456,13 @@ nav.main-nav a:hover {
    the content in front of it. */
 .motif {
 	position: absolute;
-	top: 8px;
+	top: -18px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 340px;
-	height: 170px;
+	width: 240px;
+	height: 120px;
 	color: var(--accent);
-	opacity: 0.07;
+	opacity: 0.09;
 	pointer-events: none;
 }
 .motif circle {
