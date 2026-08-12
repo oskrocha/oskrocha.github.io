@@ -21,28 +21,17 @@ jekyll serve
 ```
 
 ### Using Docker
-Alternatively, you can use Docker to build and test the website. This avoids having to install Jekyll and its dependencies on your local machine.
+Alternatively, you can build and publish through Docker (`Dockerfile` / `docker-compose.yml`), which avoids installing Jekyll/Ruby on the host entirely and is the recommended way to run the Rakefile tasks below:
 
-First, ensure you have a `Gemfile` in the root of your project with the following content:
-```ruby
-source "https://rubygems.org"
-gem "jekyll"
-gem "jekyll-scholar"
-```
-
-**Build** the website with Docker:
 ```sh
-docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -it jekyll/builder jekyll build
+docker compose run --rm site rake build:pro
 ```
-
-**Test** the website with Docker:
-```sh
-docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -p 4000:4000 -it jekyll/builder jekyll serve --host 0.0.0.0
-```
-The site will be available at `http://localhost:4000`.
 
 ## Publishing
-Execute the following script:
+This repo has two branches: `source` (Jekyll source + built `_site/`) and `master` (generated site output only, served by GitHub Pages — never edit it directly, it's fully rebuilt from `_site/` on every deploy).
+
+Publish with:
+```sh
+docker compose run --rm site rake commit_deploy
 ```
-rake commit_deploy
-```
+This commits `_site/` on `source`, pushes it, then rebuilds `master` from `_site/` and force-pushes it.
