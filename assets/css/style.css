@@ -99,11 +99,39 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	--accent:       #2458C9;
 	--accent-soft:  #E9EFFC;
 
+	/* Code blocks stay dark regardless of color scheme. */
+	--code-bg: #1B1B1F;
+	--code-fg: #D8D7D2;
+
 	--font-serif: 'Libre Caslon Text', Georgia, 'Times New Roman', serif;
 	--font-sans:  'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 	--font-mono:  'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace;
 
 	--radius: 3px;
+
+	/* Spacing scale (8px base) */
+	--sp-1: 4px;
+	--sp-2: 8px;
+	--sp-3: 12px;
+	--sp-4: 16px;
+	--sp-5: 24px;
+	--sp-6: 32px;
+	--sp-7: 48px;
+	--sp-8: 64px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--paper:        #16171B;
+		--ink:          #F2F1ED;
+		--ink-soft:     #D9D8D3;
+		--muted:        #9B9FA6;
+		--faint:        #6B6F76;
+		--line:         #2B2D33;
+		--line-strong:  #3B3E45;
+		--accent:       #7FA0EE;
+		--accent-soft:  #202A42;
+	}
 }
 
 /* Base */
@@ -123,7 +151,7 @@ h1 {
 	font: 400 34px/1.25 var(--font-serif);
 	color: var(--ink);
 	letter-spacing: -0.01em;
-	margin-bottom: 8px;
+	margin-bottom: var(--sp-2);
 }
 
 h2 {
@@ -132,8 +160,8 @@ h2 {
 	letter-spacing: 0.08em;
 	color: var(--muted);
 	border-bottom: 1px solid var(--line);
-	padding-bottom: 10px;
-	margin: 48px 0 20px;
+	padding-bottom: var(--sp-3);
+	margin: var(--sp-7) 0 var(--sp-5);
 }
 
 h2:first-child { margin-top: 0; }
@@ -146,15 +174,15 @@ h3 {
 	letter-spacing: 0.02em;
 	color: var(--accent);
 	background: var(--accent-soft);
-	padding: 4px 8px;
+	padding: var(--sp-1) var(--sp-2);
 	border-radius: var(--radius);
-	margin: 36px 0 14px;
+	margin: var(--sp-6) 0 var(--sp-3);
 }
 
 h4 {
 	font: 400 18px/1.4 var(--font-serif);
 	color: var(--ink);
-	margin: 22px 0 8px;
+	margin: var(--sp-5) 0 var(--sp-2);
 	display: flex;
 	align-items: baseline;
 	flex-wrap: wrap;
@@ -170,7 +198,7 @@ h6 { font: 600 11px var(--font-sans); color: var(--muted); margin-bottom: 6px; }
 	font: 500 12px/1 var(--font-mono);
 	color: var(--accent);
 	background: var(--accent-soft);
-	padding: 4px 8px;
+	padding: var(--sp-1) var(--sp-2);
 	border-radius: var(--radius);
 	letter-spacing: 0.02em;
 }
@@ -182,12 +210,12 @@ h6 { font: 600 11px var(--font-sans); color: var(--muted); margin-bottom: 6px; }
 	color: var(--faint);
 }
 
-p { margin-bottom: 16px; }
+p { margin-bottom: var(--sp-4); }
 
-ul 	{ margin: 4px 0 16px; padding-left: 20px; }
+ul 	{ margin: var(--sp-1) 0 var(--sp-4); padding-left: 20px; }
 li	{
 	list-style-type: disc;
-	margin: 4px 0;
+	margin: var(--sp-1) 0;
 	color: var(--muted);
 }
 
@@ -246,10 +274,10 @@ pre	{
 	padding: 20px;
 	overflow: auto;
 	border-radius: var(--radius);
-	background: var(--ink);
+	background: var(--code-bg);
 	font-size: 13px;
 	line-height: 1.5em;
-	color: #D8D7D2;
+	color: var(--code-fg);
 }
 
 table {
@@ -326,6 +354,32 @@ nav.main-nav a:hover {
 	position: relative;
 }
 
+/* Signature motif — a quiet nod to knowledge graphs, the actual subject
+   of the work this site documents. Decorative only, never competes with
+   the content in front of it. */
+.motif {
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 340px;
+	height: 170px;
+	color: var(--accent);
+	opacity: 0.07;
+	pointer-events: none;
+}
+.motif circle { fill: currentColor; }
+.motif line { stroke: currentColor; stroke-width: 1; }
+
+.eyebrow {
+	position: relative;
+	font: 600 11px/1 var(--font-mono);
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: var(--faint);
+	margin-bottom: 20px;
+}
+
 .profile #avatar {
 	display: inline-block;
 	width: 84px;
@@ -378,6 +432,18 @@ nav.main-nav a:hover {
 	color: var(--faint);
 }
 
+/* Drop cap on the homepage's opening line — a small nod to printed-page
+   typography, applied once and nowhere else. */
+#wrapper.home > p:first-of-type::first-letter {
+	font-family: var(--font-serif);
+	font-weight: 700;
+	font-size: 3.4em;
+	line-height: 0.8;
+	float: left;
+	padding: 4px 8px 0 0;
+	color: var(--accent);
+}
+
 /* ==========================================================================
    Bibliography (Publications page)
    ========================================================================== */
@@ -389,7 +455,7 @@ ul.bibliography {
 
 ul.bibliography > li {
 	list-style: none;
-	padding: 18px 0;
+	padding: var(--sp-4) 0;
 	border-bottom: 1px solid var(--line);
 }
 
@@ -441,8 +507,8 @@ p.pub-citation i { font-style: italic; color: var(--muted); }
    ========================================================================== */
 #footer {
 	box-shadow: inset 0 1px 0 var(--line);
-	padding: 20px 0 0 0;
-	margin-top: 60px;
+	padding: var(--sp-5) 0 0 0;
+	margin-top: var(--sp-8);
 }
 
 p.small {
@@ -451,13 +517,41 @@ p.small {
 	display: block;
 }
 
-/* Made with Cactus Badge */
-#badge {
-	position: absolute;
-	bottom: 8px;
-	right: 8px;
-	height: 48px;
-	width: 48px;
+/* ==========================================================================
+   Print — CVs and publication lists get printed. Nav, hover affordances,
+   and collapsed BibTeX blocks aren't useful on paper; visible URLs are.
+   ========================================================================== */
+@media print {
+	nav.main-nav,
+	.expand-link,
+	.expand-content,
+	.profile a[href^="mailto"],
+	.profile a[href*="researchgate"],
+	.profile a[href*="orcid"],
+	.profile a[href*="scholar.google"],
+	.profile a[href*="linkedin"],
+	.profile a[href*="twitter"],
+	.profile a[href*="instagram"] {
+		display: none !important;
+	}
+
+	body { background: #fff; color: #000; }
+	h1, h2, h3, h4, .profile h1 { color: #000; }
+	h2 { border-bottom-color: #000; }
+	h3, .yr { background: none; color: #000; border: 1px solid #000; }
+	a { color: #000; }
+
+	.pub-doi,
+	p.pub-citation a {
+		border-bottom: none;
+	}
+	.pub-doi::after {
+		content: " — " attr(href);
+		color: #333;
+	}
+
+	#wrapper, #wrapper.home { padding: 0; max-width: none; }
+	ul.bibliography > li { break-inside: avoid; }
 }
 
 /* Media Queries */
