@@ -205,8 +205,9 @@ h3 {
 	gap: 10px;
 }
 
-/* Timeline connector — Teaching only. A literal timeline for what is
-   literally a timeline: a spine threading through each entry's dot. */
+/* Timeline connector — Teaching, Publications, Scientific. A literal
+   timeline for what is literally a timeline: a spine threading through
+   each entry's dot. */
 .timeline {
 	position: relative;
 	padding-left: 24px;
@@ -229,7 +230,7 @@ h3 {
 .timeline h3::before {
 	content: "";
 	position: absolute;
-	left: -21px;
+	left: -24px;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 7px;
@@ -654,20 +655,12 @@ p.pub-citation {
 	font: 400 15px/1.65 var(--font-sans);
 	color: var(--ink-soft);
 	margin: 0 0 10px;
-	/* APA-style hanging indent — this is the citation style already in use
-	   (see scholar.style in _config.yml), not decoration. */
-	padding-left: 1.6em;
-	text-indent: -1.6em;
 }
 
 p.pub-citation strong { color: var(--ink); font-weight: 600; }
 p.pub-citation i { font-style: italic; color: var(--muted); }
 
 .reference-links {
-	/* Matches p.pub-citation's 1.6em hanging indent in px (computed off its
-	   15px font-size) so the actions row lines up with the wrapped lines
-	   above it, not the outdented first line. */
-	padding-left: 24px;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
