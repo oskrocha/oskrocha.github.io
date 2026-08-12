@@ -585,6 +585,10 @@ p.pub-citation strong { color: var(--ink); font-weight: 600; }
 p.pub-citation i { font-style: italic; color: var(--muted); }
 
 .reference-links {
+	/* Matches p.pub-citation's 1.6em hanging indent in px (computed off its
+	   15px font-size) so the actions row lines up with the wrapped lines
+	   above it, not the outdented first line. */
+	padding-left: 24px;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
