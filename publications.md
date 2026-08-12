@@ -1,7 +1,6 @@
 ---
 title: Publications
 permalink: publications/
-profile: true
 ---
 
 # Publications

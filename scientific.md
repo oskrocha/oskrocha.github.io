@@ -1,7 +1,6 @@
 ---
 title: Scientific activities
 permalink: scientific/
-profile: true
 ---
 
 # Scientific activities

@@ -4,7 +4,7 @@ profile: true
 
 Advancing the frontiers of Artificial Intelligence to make information discoverable, learning adaptive, experiences personalized, and AI more responsible and sustainable.
 
-I'm currently an AI Engineer at <i class="fa fa-rocket"></i> [LumApps](https://www.lumapps.com) <i class="fa fa-rocket"></i>, where I focus on AI-driven search relevance and personalization. I'm also a co-founder of [GreenMinds](https://www.greenminds.fr/), a non-profit promoting responsible and sustainable AI.
+I'm currently an AI Engineer at [LumApps](https://www.lumapps.com), where I focus on AI-driven search relevance and personalization. I'm also a co-founder of [GreenMinds](https://www.greenminds.fr/), a non-profit promoting responsible and sustainable AI.
 
 My main interests are:
 - Search Relevance and Personalization

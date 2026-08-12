@@ -1,32 +1,34 @@
 ---
 title: Teaching
 permalink: teaching/
-profile: true
 ---
 
 # Teaching
 
-## Universitè Nice-Sophia Antipolis, Nice, France.
+## Université Nice-Sophia Antipolis, Nice, France
 
-- ### 2017-2025 - Knowledge Engineering (IC), Master IFI - (English/French)
-    - Knowledge extraction from text
-    - Labs
+#### <span class="yr">2017–2025</span> Knowledge Engineering (IC), Master IFI <span class="lang">EN/FR</span>
+- Knowledge extraction from text
+- Labs
 
-- ### 2016-2019 - Semantic Web technologies (WebSem), Master IFI - (English/French)
-    - Introduction to DBpedia
-    - SKOS: Simple Knowledge Organization System
-    - Labs
+#### <span class="yr">2016–2019</span> Semantic Web Technologies (WebSem), Master IFI <span class="lang">EN/FR</span>
+- Introduction to DBpedia
+- SKOS: Simple Knowledge Organization System
+- Labs
 
-- ### 2017-2019 - Web Languages - (French)
-    - Labs
+#### <span class="yr">2017–2019</span> Web Languages <span class="lang">FR</span>
+- Labs
 
-- ### 2016 - Man-machine interactions/interfaces - (French)
-    - Labs
+#### <span class="yr">2016</span> Man-Machine Interactions/Interfaces <span class="lang">FR</span>
+- Labs
 
-## Politecnico di Torino, Turin, Italy.
-- ### 2013 - Informatics - 12BHDLZ (Italian)
-    - C programming
-- ### 2011–2012 - Object-oriented programming - (Italian)
-- ### 2011–2012 - Information Systems - (Italian)
+## Politecnico di Torino, Turin, Italy
+
+#### <span class="yr">2013</span> Informatics — 12BHDLZ <span class="lang">IT</span>
+- C programming
+
+#### <span class="yr">2011–2012</span> Object-Oriented Programming <span class="lang">IT</span>
+
+#### <span class="yr">2011–2012</span> Information Systems <span class="lang">IT</span>
 
 {% include footer.html %}

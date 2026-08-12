@@ -1,12 +1,9 @@
 ---
 ---
-<!-- {{reference}} -->
-{{ entry.title }}
-
+{% assign pub_title_strong = entry.title | prepend: "<strong>" | append: "</strong>" %}
+<p class="pub-citation">{{ reference | replace: entry.title, pub_title_strong }}</p>
 <div class="reference-links">
-  <p class="expand-link"><a href="#">Bibtex</a></p>
-  <pre class="expand-content">{{entry.bibtex}}</pre>
-  {% if entry.doi %}
-  DOI: <a href="http://dx.doi.org/{{entry.doi}}">{{entry.doi}}</a>
-  {% endif %}
+  <p class="expand-link"><a href="#">BibTeX</a></p>
+  <pre class="expand-content">{{ entry.bibtex }}</pre>
+  {% if entry.doi %}<a class="pub-doi" href="http://dx.doi.org/{{ entry.doi }}">DOI: {{ entry.doi }}</a>{% endif %}
 </div>

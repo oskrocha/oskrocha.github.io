@@ -11,6 +11,8 @@ services:
       HOME: /tmp
       SSH_AUTH_SOCK: /ssh-agent
       BUNDLE_PATH: vendor/bundle
+    ports:
+      - "4000:4000"
     volumes:
       - .:/app
       # Docker Desktop for Mac's host ssh-agent forwarding socket.
