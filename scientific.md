@@ -7,31 +7,31 @@ permalink: scientific/
 
 ## Programme Committee
 
-### 2026
+<h3 class="year-badge">2026</h3>
 
 - [EKAW 2026](https://ekaw2026.di.unito.it/) The 25th International Conference on Knowledge Engineering and Knowledge Management
 
 - [SAC 2026](https://sites.google.com/view/sac2026-st/home) ACM Symposium on Applied Computing 2026 - Semantic Technology (ST)
 
-### 2025
+<h3 class="year-badge">2025</h3>
 
 - [SAC 2025](https://sites.google.com/view/sac2025-st/home) ACM Symposium on Applied Computing 2025 - Semantic Technology (ST)
 
-### 2024
+<h3 class="year-badge">2024</h3>
 
 - [EKAW 2024](https://event.cwi.nl/ekaw2024/) The 24th International Conference on Knowledge Engineering and Knowledge Management - Research Track
 
-### 2023
+<h3 class="year-badge">2023</h3>
 
 - [SAC 2023](https://www.sigapp.org/sac/sac2023/index.html) ACM Symposium on Applied Computing 2023 - The Semantic Web and Applications (SWA) 
 
-### 2022
+<h3 class="year-badge">2022</h3>
 
 - [EKAW 2022](https://ekaw2022.inf.unibz.it) The 23rd International Conference on Knowledge Engineering and Knowledge Management
 
 - [SAC 2022](https://sites.google.com/view/sac2022-swa/home) ACM Symposium on Applied Computing 2022 - The Semantic Web and Applications (SWA) 
 
-### 2021
+<h3 class="year-badge">2021</h3>
 
 - [Semantics 2021](https://2021-eu.semantics.cc/) SEMANTiCS Conference 2021
 
@@ -39,7 +39,7 @@ permalink: scientific/
 
 - [AAAI 2021](https://aaai.org/Conferences/AAAI-21/) The 35th AAAI Conference on Artificial Intelligence
 
-### 2020
+<h3 class="year-badge">2020</h3>
 
 - [AAAI 2020](https://aaai.org/Conferences/AAAI-20/) The 34th AAAI Conference on Artificial Intelligence
 
@@ -58,7 +58,7 @@ permalink: scientific/
 - [KSE 2020](https://kse-conference.org) 12th International Conference on Knowledge and Systems Engineering
 
 
-### 2019
+<h3 class="year-badge">2019</h3>
 
 - [IJCAI 2019](https://www.ijcai19.org/program-committee.html) The 28th International Joint Conference on Artificial Intelligence
 
@@ -70,7 +70,7 @@ permalink: scientific/
 
 - [KSE 2019](http://kse2019.ued.udn.vn/program-committee) 11th International Conference on Knowledge and Systems Engineering
 
-### 2018
+<h3 class="year-badge">2018</h3>
 
 - [IJCAI-ECAI 2018](https://www.ijcai-18.org/program-committee/) 27th International Joint Conference on Artificial Intelligence and the 23rd European Conference on Artificial Intelligence
 
@@ -82,7 +82,7 @@ permalink: scientific/
 
 - [KSE 2018](http://kse-conf.org/committees/) 10th International Conference on Knowledge and Systems Engineering
 
-### 2017
+<h3 class="year-badge">2017</h3>
 
 - [Semantics 2017](https://2017.semantics.cc/committee) SEMANTiCS Conference 2017
 
@@ -90,7 +90,7 @@ permalink: scientific/
 
 - [KSE 2017](http://kse2017.dhsphue.edu.vn/Program_Committee.aspx) 9th International Conference on Knowledge and Systems Engineering
 
-### 2016
+<h3 class="year-badge">2016</h3>
 
 - [KEOD 2016](http://www.keod.ic3k.org/ProgramCommittee.aspx?y=2016) 8th International Conference on Knowledge Engineering and Ontology Development
 
