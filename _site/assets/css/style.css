@@ -221,6 +221,11 @@ h3 {
 	background: var(--line-strong);
 }
 .timeline h3 { position: relative; }
+.timeline h3 + p {
+	font-size: 14px;
+	color: var(--muted);
+	margin: 0 0 var(--sp-4);
+}
 .timeline h3::before {
 	content: "";
 	position: absolute;
