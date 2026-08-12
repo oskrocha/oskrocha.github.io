@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+
+  <!-- Meta / social sharing -->
+  <meta name="description" content="{% if page.title %}{{ site.name }} — {{ page.title }}{% else %}{{ site.meta_description }}{% endif %}">
+  <meta property="og:type" content="{% if page.title %}article{% else %}profile{% endif %}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.title %}{{ site.name }} — {{ page.title }}{% else %}{{ site.meta_description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}assets/images/avatar.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.title %}{{ site.name }} — {{ page.title }}{% else %}{{ site.meta_description }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}assets/images/avatar.png">
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css">
   <link rel="stylesheet" href="{{ site.baseurl }}assets/css/highlight.css">
@@ -31,7 +45,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}assets/favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}assets/favicons/favicon-16x16.png">
   <link rel="manifest" href="{{ site.baseurl }}assets/favicons/manifest.json">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#2458C9">
   <!-- Favicons end -->
 
 </head>
