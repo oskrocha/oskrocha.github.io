@@ -451,36 +451,6 @@ nav.main-nav a:hover {
 	position: relative;
 }
 
-/* Signature motif — a quiet nod to knowledge graphs, the actual subject
-   of the work this site documents. Decorative only, never competes with
-   the content in front of it. */
-.motif {
-	position: absolute;
-	top: -18px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 240px;
-	height: 120px;
-	color: var(--accent);
-	opacity: 0.09;
-	pointer-events: none;
-}
-.motif circle {
-	fill: currentColor;
-	opacity: 0;
-	animation: motif-appear 0.5s ease-out forwards;
-}
-.motif line {
-	stroke: currentColor;
-	stroke-width: 1;
-	stroke-dasharray: 200;
-	stroke-dashoffset: 200;
-	animation: motif-draw 0.9s ease-out forwards;
-}
-
-@keyframes motif-draw { to { stroke-dashoffset: 0; } }
-@keyframes motif-appear { to { opacity: 1; } }
-
 .profile #avatar {
 	display: inline-block;
 	width: 84px;
