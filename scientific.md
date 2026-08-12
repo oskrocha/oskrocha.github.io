@@ -8,6 +8,20 @@ profile: true
 
 ## Programme Committee
 
+### 2026
+
+- [EKAW 2026](https://ekaw2026.di.unito.it/) The 25th International Conference on Knowledge Engineering and Knowledge Management
+
+- [SAC 2026](https://sites.google.com/view/sac2026-st/home) ACM Symposium on Applied Computing 2026 - Semantic Technology (ST)
+
+### 2025
+
+- [SAC 2025](https://sites.google.com/view/sac2025-st/home) ACM Symposium on Applied Computing 2025 - Semantic Technology (ST)
+
+### 2024
+
+- [EKAW 2024](https://event.cwi.nl/ekaw2024/) The 24th International Conference on Knowledge Engineering and Knowledge Management - Research Track
+
 ### 2023
 
 - [SAC 2023](https://www.sigapp.org/sac/sac2023/index.html) ACM Symposium on Applied Computing 2023 - The Semantic Web and Applications (SWA) 
