@@ -371,11 +371,15 @@ img {
 nav.main-nav {
 	position: sticky;
 	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 8px;
 	padding: 16px 40px;
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
-	text-align: right;
 	z-index: 100;
 	background: rgba(var(--paper-rgb), 0.68);
 	-webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -389,7 +393,26 @@ nav.main-nav {
 	nav.main-nav { background: var(--paper); }
 }
 
-nav.main-nav a {
+/* Compact identity — mimics a mobile app's collapsing large-title header.
+   Always shown on inner pages (there's no big header to collapse from);
+   on the homepage it stays hidden until the hero has scrolled past. */
+.nav-identity {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: var(--ink);
+	opacity: 1;
+	transition: opacity 0.25s ease;
+}
+.nav-identity img { width: 24px; height: 24px; border-radius: 50%; }
+.nav-identity span { font: 600 13px var(--font-sans); }
+
+nav.main-nav.has-hero .nav-identity { opacity: 0; pointer-events: none; }
+nav.main-nav.has-hero.scrolled .nav-identity { opacity: 1; pointer-events: auto; }
+
+.nav-links { display: flex; align-items: center; flex-wrap: wrap; }
+
+.nav-links a {
 	padding: 8px 4px;
 	margin-left: 16px;
 	color: var(--muted);
@@ -399,7 +422,7 @@ nav.main-nav a {
 	border-bottom: 1px solid transparent;
 }
 
-nav.main-nav a:hover {
+.nav-links a:hover {
 	color: var(--accent);
 	border-color: var(--accent);
 }
@@ -648,8 +671,8 @@ p.small {
 
 /* Media Queries */
 @media screen and (max-width: 540px) {
-	nav.main-nav { padding: 14px 20px; text-align: left; }
-	nav.main-nav a { margin: 0 16px 8px 0; }
+	nav.main-nav { padding: 14px 20px; }
+	.nav-links a { margin: 0 16px 8px 0; }
 	.theme-toggle { margin: 0 0 8px; }
 	#wrapper { padding: 30px 20px 60px 20px; }
 	#wrapper.home { padding: 0 20px 20px; }
