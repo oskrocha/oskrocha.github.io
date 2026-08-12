@@ -90,6 +90,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
    ========================================================================== */
 :root {
 	--paper:        #FFFFFF;
+	--paper-rgb:    255, 255, 255;
 	--ink:          #1B1B1F;
 	--ink-soft:     #3A3A40;
 	--muted:        #6B6F76;
@@ -125,6 +126,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 @media (prefers-color-scheme: dark) {
 	:root:not([data-theme="light"]) {
 		--paper:        #16171B;
+		--paper-rgb:    22, 23, 27;
 		--ink:          #F2F1ED;
 		--ink-soft:     #D9D8D3;
 		--muted:        #9B9FA6;
@@ -138,6 +140,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 :root[data-theme="dark"] {
 	--paper:        #16171B;
+	--paper-rgb:    22, 23, 27;
 	--ink:          #F2F1ED;
 	--ink-soft:     #D9D8D3;
 	--muted:        #9B9FA6;
@@ -149,7 +152,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 /* Base */
-html, body { height: 100%; }
+html, body { min-height: 100%; }
 
 body {
 	font: 400 16px/1.6 var(--font-sans);
@@ -327,14 +330,24 @@ img {
    Navigation
    ========================================================================== */
 nav.main-nav {
-	padding: 24px 40px 0;
+	position: sticky;
+	top: 0;
+	padding: 16px 40px;
 	max-width: 800px;
 	width: 100%;
-	background: var(--paper);
 	margin: 0 auto;
 	text-align: right;
 	z-index: 100;
-	transition: background-color 0.2s ease;
+	background: rgba(var(--paper-rgb), 0.68);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	backdrop-filter: blur(16px) saturate(180%);
+	border-bottom: 1px solid var(--line);
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Falls back to a plain opaque bar if backdrop-filter isn't supported. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+	nav.main-nav { background: var(--paper); }
 }
 
 nav.main-nav a {
@@ -592,8 +605,9 @@ p.small {
 
 /* Media Queries */
 @media screen and (max-width: 540px) {
-	nav.main-nav { padding: 16px 20px 0; text-align: left; }
+	nav.main-nav { padding: 14px 20px; text-align: left; }
 	nav.main-nav a { margin: 0 16px 8px 0; }
+	.theme-toggle { margin: 0 0 8px; }
 	#wrapper { padding: 30px 20px 60px 20px; }
 	#wrapper.home { padding: 0 20px 20px; }
 	.profile #profile-wrapper { padding: 20px 20px 0; }
