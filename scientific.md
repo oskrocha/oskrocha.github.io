@@ -7,6 +7,8 @@ permalink: scientific/
 
 ## Programme Committee
 
+<div class="timeline" markdown="1">
+
 <h3 class="year-badge">2026</h3>
 
 - [EKAW 2026](https://ekaw2026.di.unito.it/) The 25th International Conference on Knowledge Engineering and Knowledge Management
@@ -96,5 +98,6 @@ permalink: scientific/
 
 - [KSE 2016](http://fit.mta.edu.vn/kse2016/conferencecommittee.aspx) 8th International Conference on Knowledge and Systems Engineering
 
+</div>
 
 {% include footer.html %}

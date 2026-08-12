@@ -239,6 +239,24 @@ h3 {
 	box-shadow: 0 0 0 3px var(--paper);
 }
 
+/* Publications/Scientific reuse .timeline, but jekyll-scholar emits its own
+   h2 (section label) inside the wrapped block — pull it back out to the
+   page margin so it reads exactly as it did before, unaffected. The spine
+   then starts below it instead of running through the label. */
+.timeline-bib > h2 {
+	margin-left: -24px;
+}
+.timeline-bib::before {
+	top: 92px;
+}
+
+/* The citation row's own hover accent bar (ul.bibliography > li::before)
+   would otherwise land right on top of the timeline spine/dots — push it
+   further into the gutter, clear of both. */
+.timeline ul.bibliography > li::before {
+	left: -34px;
+}
+
 /* Year-group badge — bibliography years (h3.bibliography, auto-classed by
    jekyll-scholar) and Programme Committee years (.year-badge, via kramdown
    {: .year-badge}). Same visual language as the .yr badge on Teaching. */
