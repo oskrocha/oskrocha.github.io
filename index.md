@@ -15,7 +15,7 @@ My main interests are:
 
 Previously, I was the Head of AI at Teach on Mars, leading innovation in e-learning with LLMs, semantic search, and graph-based recommendation systems.
 
-I'm an external collaborator of [WIMMICS](http://wimmics.inria.fr), a joint research team between [Inria Sophia-Antipolis](http://www.inria.fr/centre/sophia) Sophia Antipolis - Méditerranée and [I3S](https://www.i3s.unice.fr) (CNRS and Université Côte d'Azur), where I worked for almost 5 years doing research on AI in education. I also worked previously as a postdoc researcher at the [Politecnico di Torino](http://www.polito.it) in Italy for the [SoftEng](http://softeng.polito.it) research group and I hold a PhD in Information and Systems Engineering obtained also from the Politecnico di Torino.
+I'm an external collaborator of [WIMMICS](https://wimmics.inria.fr), a joint research team between [Inria Sophia-Antipolis](https://www.inria.fr/fr/centre-inria-universite-cote-azur) Sophia Antipolis - Méditerranée and [I3S](https://www.i3s.unice.fr) (CNRS and Université Côte d'Azur), where I worked for almost 5 years doing research on AI in education. I also worked previously as a postdoc researcher at the [Politecnico di Torino](https://www.polito.it) in Italy for the SoftEng research group and I hold a PhD in Information and Systems Engineering obtained also from the Politecnico di Torino.
 
 
 {% include footer.html %}

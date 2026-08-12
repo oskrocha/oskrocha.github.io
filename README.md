@@ -1,6 +1,6 @@
 # My Personal Website
 
-This is the source code of my [personal website](http://oscarrodriguez.me). It was created using [Jekyll](https://jekyllrb.com) and the nice [kactus](https://github.com/nickbalestra/kactus) theme.
+This is the source code of my [personal website](https://oscarrodriguez.me). It was created using [Jekyll](https://jekyllrb.com) and the nice [kactus](https://github.com/nickbalestra/kactus) theme.
 To create the « publications » section, I used the [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) plugin.
 
 Feel free to reuse this code for your own personal website.

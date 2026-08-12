@@ -3,7 +3,7 @@
 {% assign pub_title_strong = entry.title | prepend: "<strong>" | append: "</strong>" %}
 <p class="pub-citation">{{ reference | replace: entry.title, pub_title_strong }}</p>
 <div class="reference-links">
-  <p class="expand-link"><a href="#">BibTeX</a></p>
+  <a class="expand-link" href="#">BibTeX</a>
   <pre class="expand-content">{{ entry.bibtex }}</pre>
-  {% if entry.doi %}<a class="pub-doi" href="http://dx.doi.org/{{ entry.doi }}">DOI: {{ entry.doi }}</a>{% endif %}
+  {% if entry.doi %}<a class="pub-doi" href="https://doi.org/{{ entry.doi }}">DOI: {{ entry.doi }}</a>{% endif %}
 </div>

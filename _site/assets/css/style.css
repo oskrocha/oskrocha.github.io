@@ -593,14 +593,12 @@ p.pub-citation i { font-style: italic; color: var(--muted); }
 
 .expand-link {
 	font: 500 12px var(--font-mono);
-}
-.expand-link a {
 	color: var(--muted);
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
 	border-bottom: 1px dotted var(--line-strong);
 }
-.expand-link a:hover { color: var(--accent); border-color: var(--accent); }
+.expand-link:hover { color: var(--accent); border-color: var(--accent); }
 
 .pub-doi {
 	font: 500 12px var(--font-mono);

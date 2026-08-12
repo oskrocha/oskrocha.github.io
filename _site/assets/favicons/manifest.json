@@ -1,5 +1,9 @@
 {
- "name": "App",
+ "name": "Oscar Rodríguez Rocha",
+ "short_name": "Oscar Rodríguez",
+ "theme_color": "#2458C9",
+ "background_color": "#FFFFFF",
+ "display": "browser",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
