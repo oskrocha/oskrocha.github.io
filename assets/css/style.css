@@ -250,11 +250,21 @@ h3 {
 	top: 92px;
 }
 
-/* The citation row's own hover accent bar (ul.bibliography > li::before)
-   would otherwise land right on top of the timeline spine/dots — push it
-   further into the gutter, clear of both. */
-.timeline ul.bibliography > li::before {
-	left: -34px;
+/* One hover treatment shared by every entry across Publications, Scientific,
+   and Teaching: a quiet background tint instead of a line competing with
+   the spine for the same gutter. li covers Publications' citations and
+   Scientific's plain bullets (whose disc markers are redundant next to the
+   timeline dots, so dropped); .timeline-entry covers Teaching, which has
+   no per-entry li of its own. */
+.timeline li,
+.timeline .timeline-entry {
+	list-style: none;
+	border-radius: var(--radius);
+	transition: background-color 0.15s ease;
+}
+.timeline li:hover,
+.timeline .timeline-entry:hover {
+	background: var(--accent-soft);
 }
 
 /* Year-group badge — bibliography years (h3.bibliography, auto-classed by
@@ -633,26 +643,10 @@ ul.bibliography {
 }
 
 ul.bibliography > li {
-	position: relative;
 	list-style: none;
 	padding: var(--sp-4) 0;
 	border-bottom: 1px solid var(--line);
 }
-
-/* Quiet hover affordance — an accent bar in the page gutter, not a
-   background fill, so it doesn't fight the citation text for attention. */
-ul.bibliography > li::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: -20px;
-	width: 3px;
-	background: var(--accent);
-	opacity: 0;
-	transition: opacity 0.15s ease;
-}
-ul.bibliography > li:hover::before { opacity: 1; }
 
 ul.bibliography > li:last-child { border-bottom: none; }
 
@@ -772,7 +766,6 @@ p.small {
 	h2 { font-size: 12px; }
 	h3 { font-size: 16px; }
 	h3.bibliography, .year-badge { font-size: 12px; }
-	ul.bibliography > li::before { left: -12px; }
 
 	.reference-links { gap: 12px; }
 }
