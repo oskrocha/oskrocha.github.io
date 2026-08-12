@@ -66,6 +66,12 @@
 
   <div class="progress-bar" aria-hidden="true"></div>
 
+  <button type="button" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
   {% include navigation.html %}
 
   {% if page.profile %}
@@ -97,18 +103,23 @@
   <script>
     (function () {
       var bar = document.querySelector('.progress-bar');
-      var nav = document.querySelector('nav.main-nav.has-hero');
+      var nav = document.querySelector('nav.main-nav');
       var hero = document.querySelector('.profile #avatar');
-      if (!bar && !(nav && hero)) return;
+      var toTop = document.querySelector('.back-to-top');
+      if (!bar && !nav && !toTop) return;
       var ticking = false;
       function update() {
         var doc = document.documentElement;
         var scrollable = doc.scrollHeight - doc.clientHeight;
         var pct = scrollable > 0 ? (doc.scrollTop / scrollable) * 100 : 0;
         if (bar) bar.style.width = pct + '%';
-        if (nav && hero) {
-          nav.classList.toggle('scrolled', hero.getBoundingClientRect().bottom < nav.offsetHeight);
+        if (nav) {
+          nav.classList.toggle('is-scrolled', doc.scrollTop > 10);
+          if (nav.classList.contains('has-hero') && hero) {
+            nav.classList.toggle('scrolled', hero.getBoundingClientRect().bottom < nav.offsetHeight);
+          }
         }
+        if (toTop) toTop.classList.toggle('visible', doc.scrollTop > 400);
         ticking = false;
       }
       document.addEventListener('scroll', function () {
@@ -117,6 +128,11 @@
           ticking = true;
         }
       }, { passive: true });
+      if (toTop) {
+        toTop.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
       update();
     })();
   </script>

@@ -205,6 +205,35 @@ h3 {
 	gap: 10px;
 }
 
+/* Timeline connector — Teaching only. A literal timeline for what is
+   literally a timeline: a spine threading through each entry's dot. */
+.timeline {
+	position: relative;
+	padding-left: 24px;
+}
+.timeline::before {
+	content: "";
+	position: absolute;
+	left: 3px;
+	top: 10px;
+	bottom: 10px;
+	width: 1px;
+	background: var(--line-strong);
+}
+.timeline h3 { position: relative; }
+.timeline h3::before {
+	content: "";
+	position: absolute;
+	left: -21px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: var(--accent);
+	box-shadow: 0 0 0 3px var(--paper);
+}
+
 /* Year-group badge — bibliography years (h3.bibliography, auto-classed by
    jekyll-scholar) and Programme Committee years (.year-badge, via kramdown
    {: .year-badge}). Same visual language as the .yr badge on Teaching. */
@@ -365,6 +394,32 @@ img {
 	transition: width 0.1s linear;
 }
 
+.back-to-top {
+	position: fixed;
+	right: 24px;
+	bottom: 24px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: rgba(var(--paper-rgb), 0.85);
+	border: 1px solid var(--line-strong);
+	color: var(--muted);
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(8px);
+	z-index: 150;
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
+	transition: opacity 0.2s ease, transform 0.2s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.back-to-top:hover { color: var(--accent); border-color: var(--accent); }
+.back-to-top svg { width: 18px; height: 18px; }
+
 /* ==========================================================================
    Navigation
    ========================================================================== */
@@ -385,7 +440,14 @@ nav.main-nav {
 	-webkit-backdrop-filter: blur(16px) saturate(180%);
 	backdrop-filter: blur(16px) saturate(180%);
 	border-bottom: 1px solid var(--line);
-	transition: background-color 0.2s ease, border-color 0.2s ease;
+	box-shadow: 0 0 0 0 transparent;
+	transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Reads as a "lifted" glass panel once it's actually floating over content,
+   not just at rest at the top of the page. */
+nav.main-nav.is-scrolled {
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* Falls back to a plain opaque bar if backdrop-filter isn't supported. */
@@ -640,6 +702,9 @@ p.small {
 @media print {
 	nav.main-nav,
 	.progress-bar,
+	.back-to-top,
+	.timeline::before,
+	.timeline h3::before,
 	.expand-link,
 	.expand-content,
 	.profile a[href^="mailto"],
