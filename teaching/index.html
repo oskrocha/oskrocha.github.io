@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'dark' || saved === 'light') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    })();
+  </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,6 +82,23 @@
     -->
 
     <!-- <a class="cta" href="/publications">Publications</a> -->
+
+    <button type="button" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="12" y1="2" x2="12" y2="4"/>
+            <line x1="12" y1="20" x2="12" y2="22"/>
+            <line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/>
+            <line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/>
+            <line x1="2" y1="12" x2="4" y2="12"/>
+            <line x1="20" y1="12" x2="22" y2="12"/>
+            <line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/>
+            <line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 1 0 10.5 10.5z"/>
+        </svg>
+    </button>
 </nav>
 
 
@@ -128,7 +153,20 @@
   <script src="/assets/js/main.js"></script>
   <script src="/assets/js/highlight.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-  
+
+  <script>
+    document.querySelectorAll('.theme-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var root = document.documentElement;
+        var current = root.getAttribute('data-theme');
+        var isDark = current ? current === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var next = isDark ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+    });
+  </script>
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -120,8 +120,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	--sp-8: 64px;
 }
 
+/* Dark mode: automatic by OS preference, or forced by the nav toggle via
+   [data-theme] (persisted to localStorage — see default.html). */
 @media (prefers-color-scheme: dark) {
-	:root {
+	:root:not([data-theme="light"]) {
 		--paper:        #16171B;
 		--ink:          #F2F1ED;
 		--ink-soft:     #D9D8D3;
@@ -134,6 +136,18 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 }
 
+:root[data-theme="dark"] {
+	--paper:        #16171B;
+	--ink:          #F2F1ED;
+	--ink-soft:     #D9D8D3;
+	--muted:        #9B9FA6;
+	--faint:        #6B6F76;
+	--line:         #2B2D33;
+	--line-strong:  #3B3E45;
+	--accent:       #7FA0EE;
+	--accent-soft:  #202A42;
+}
+
 /* Base */
 html, body { height: 100%; }
 
@@ -143,6 +157,7 @@ body {
 	color: var(--ink-soft);
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* Content headings (page titles, section labels, year groups) — the
@@ -319,6 +334,7 @@ nav.main-nav {
 	margin: 0 auto;
 	text-align: right;
 	z-index: 100;
+	transition: background-color 0.2s ease;
 }
 
 nav.main-nav a {
@@ -335,6 +351,35 @@ nav.main-nav a:hover {
 	color: var(--accent);
 	border-color: var(--accent);
 }
+
+.theme-toggle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	margin-left: 16px;
+	padding: 0;
+	vertical-align: middle;
+	background: none;
+	border: 1px solid var(--line-strong);
+	border-radius: 50%;
+	color: var(--muted);
+	cursor: pointer;
+	transition: color 0.15s ease, border-color 0.15s ease;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle svg { width: 15px; height: 15px; }
+
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) .theme-toggle .icon-sun { display: block; }
+	:root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+}
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* ==========================================================================
    Homepage hero (.profile) — the only page that renders the full
@@ -359,7 +404,7 @@ nav.main-nav a:hover {
    the content in front of it. */
 .motif {
 	position: absolute;
-	top: -10px;
+	top: 8px;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 340px;
@@ -370,15 +415,6 @@ nav.main-nav a:hover {
 }
 .motif circle { fill: currentColor; }
 .motif line { stroke: currentColor; stroke-width: 1; }
-
-.eyebrow {
-	position: relative;
-	font: 600 11px/1 var(--font-mono);
-	text-transform: uppercase;
-	letter-spacing: 0.12em;
-	color: var(--faint);
-	margin-bottom: 20px;
-}
 
 .profile #avatar {
 	display: inline-block;
