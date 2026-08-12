@@ -347,6 +347,20 @@ img {
 }
 
 /* ==========================================================================
+   Reading progress
+   ========================================================================== */
+.progress-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background: var(--accent);
+	z-index: 200;
+	transition: width 0.1s linear;
+}
+
+/* ==========================================================================
    Navigation
    ========================================================================== */
 nav.main-nav {
@@ -446,8 +460,21 @@ nav.main-nav a:hover {
 	opacity: 0.07;
 	pointer-events: none;
 }
-.motif circle { fill: currentColor; }
-.motif line { stroke: currentColor; stroke-width: 1; }
+.motif circle {
+	fill: currentColor;
+	opacity: 0;
+	animation: motif-appear 0.5s ease-out forwards;
+}
+.motif line {
+	stroke: currentColor;
+	stroke-width: 1;
+	stroke-dasharray: 200;
+	stroke-dashoffset: 200;
+	animation: motif-draw 0.9s ease-out forwards;
+}
+
+@keyframes motif-draw { to { stroke-dashoffset: 0; } }
+@keyframes motif-appear { to { opacity: 1; } }
 
 .profile #avatar {
 	display: inline-block;
@@ -612,6 +639,7 @@ p.small {
    ========================================================================== */
 @media print {
 	nav.main-nav,
+	.progress-bar,
 	.expand-link,
 	.expand-content,
 	.profile a[href^="mailto"],
