@@ -1,4 +1,10 @@
-<nav class="main-nav">
+<nav class="main-nav{% if page.profile %} has-hero{% endif %}">
+    <a href="{{ site.baseurl }}" class="nav-identity">
+        <img src="{{ site.baseurl }}assets/images/avatar.png" width="24" height="24" alt="{{ site.author }}" />
+        <span>{{ site.author }}</span>
+    </a>
+
+    <div class="nav-links">
     {% if page.url != "/index.html" %}
         <a href="{{ site.baseurl }}"> <span class="arrow">←</span> Home </a>
     {% endif %}
@@ -39,4 +45,5 @@
             <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 1 0 10.5 10.5z"/>
         </svg>
     </button>
+    </div>
 </nav>

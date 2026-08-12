@@ -66,7 +66,13 @@
 
   <div class="progress-bar" aria-hidden="true"></div>
 
-  <nav class="main-nav">
+  <nav class="main-nav has-hero">
+    <a href="/" class="nav-identity">
+        <img src="/assets/images/avatar.png" width="24" height="24" alt="Oscar Rodríguez Rocha" />
+        <span>Oscar Rodríguez Rocha</span>
+    </a>
+
+    <div class="nav-links">
     
         <a href="/"> <span class="arrow">←</span> Home </a>
     
@@ -107,6 +113,7 @@
             <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 1 0 10.5 10.5z"/>
         </svg>
     </button>
+    </div>
 </nav>
 
 
@@ -195,13 +202,18 @@
   <script>
     (function () {
       var bar = document.querySelector('.progress-bar');
-      if (!bar) return;
+      var nav = document.querySelector('nav.main-nav.has-hero');
+      var hero = document.querySelector('.profile #header');
+      if (!bar && !(nav && hero)) return;
       var ticking = false;
       function update() {
         var doc = document.documentElement;
         var scrollable = doc.scrollHeight - doc.clientHeight;
         var pct = scrollable > 0 ? (doc.scrollTop / scrollable) * 100 : 0;
-        bar.style.width = pct + '%';
+        if (bar) bar.style.width = pct + '%';
+        if (nav && hero) {
+          nav.classList.toggle('scrolled', hero.getBoundingClientRect().bottom < nav.offsetHeight);
+        }
         ticking = false;
       }
       document.addEventListener('scroll', function () {
