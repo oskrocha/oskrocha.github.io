@@ -9,15 +9,23 @@ permalink: teaching/
 
 <div class="timeline" markdown="1">
 
+<div class="timeline-entry" markdown="1">
 ### <span class="yr">2017–2025</span> Knowledge Engineering (IC), Master IFI <span class="lang">EN/FR</span>
 Knowledge extraction from text.
+</div>
 
+<div class="timeline-entry" markdown="1">
 ### <span class="yr">2016–2019</span> Semantic Web Technologies (WebSem), Master IFI <span class="lang">EN/FR</span>
 Introduction to DBpedia and SKOS (Simple Knowledge Organization System).
+</div>
 
+<div class="timeline-entry" markdown="1">
 ### <span class="yr">2017–2019</span> Web Languages <span class="lang">FR</span>
+</div>
 
+<div class="timeline-entry" markdown="1">
 ### <span class="yr">2016</span> Man-Machine Interactions/Interfaces <span class="lang">FR</span>
+</div>
 
 </div>
 
@@ -25,12 +33,18 @@ Introduction to DBpedia and SKOS (Simple Knowledge Organization System).
 
 <div class="timeline" markdown="1">
 
+<div class="timeline-entry" markdown="1">
 ### <span class="yr">2013</span> Informatics — 12BHDLZ <span class="lang">IT</span>
 C programming.
+</div>
 
+<div class="timeline-entry" markdown="1">
 ### <span class="yr">2011–2012</span> Object-Oriented Programming <span class="lang">IT</span>
+</div>
 
+<div class="timeline-entry" markdown="1">
 ### <span class="yr">2011–2012</span> Information Systems <span class="lang">IT</span>
+</div>
 
 </div>
 
