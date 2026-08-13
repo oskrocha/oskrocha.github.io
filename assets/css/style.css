@@ -535,6 +535,17 @@ nav.main-nav.has-hero.scrolled .nav-identity { opacity: 1; pointer-events: auto;
 	cursor: default;
 }
 
+/* .nav-links a's underline styling (incl. transparent border-bottom)
+   also matches .nav-home since it's an <a>, which clashes with
+   .icon-btn's own circular border on just that one edge. Override with
+   equal specificity so the ring renders whole. */
+.nav-links a.nav-home {
+	border-color: var(--line-strong);
+}
+.nav-links a.nav-home:hover {
+	border-color: var(--accent);
+}
+
 .icon-btn {
 	display: inline-flex;
 	align-items: center;
