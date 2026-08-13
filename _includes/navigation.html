@@ -5,21 +5,9 @@
     </a>
 
     <div class="nav-links">
-    {% if page.url != "/index.html" %}
-        <a href="{{ site.baseurl }}"> <span class="arrow">←</span> Home </a>
-    {% endif %}
-
-    {% if page.url != "/publications/" %}
         <a href="{{ site.baseurl }}publications">Publications </a>
-    {% endif %}
-
-    {% if page.url != "/teaching/" %}
         <a href="{{ site.baseurl }}teaching">Teaching </a>
-    {% endif %}
-
-    {% if page.url != "/scientific/" %}
         <a href="{{ site.baseurl }}scientific">Scientific Activities </a>
-    {% endif %}
 
     <!--
     {% if page.url != "/contact/" %}
