@@ -506,6 +506,12 @@ nav.main-nav.is-scrolled {
 nav.main-nav.has-hero .nav-identity { opacity: 0; pointer-events: none; }
 nav.main-nav.has-hero.scrolled .nav-identity { opacity: 1; pointer-events: auto; }
 
+/* Icons (home, theme toggle, hamburger) sit outside .nav-links so they
+   never compete with the variable-width text links for wrap space -
+   that's what orphaned the toggle onto its own line at in-between
+   widths. Only the text links collapse behind the hamburger. */
+.nav-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+
 .nav-links { display: flex; align-items: center; flex-wrap: wrap; }
 
 .nav-links a,
@@ -535,16 +541,7 @@ nav.main-nav.has-hero.scrolled .nav-identity { opacity: 1; pointer-events: auto;
 	cursor: default;
 }
 
-/* .nav-links a's underline styling (incl. transparent border-bottom)
-   also matches .nav-home since it's an <a>, which clashes with
-   .icon-btn's own circular border on just that one edge. Override with
-   equal specificity so the ring renders whole. */
-.nav-links a.nav-home {
-	border-color: var(--line-strong);
-}
-.nav-links a.nav-home:hover {
-	border-color: var(--accent);
-}
+.icon-btn.nav-toggle { display: none; }
 
 .icon-btn {
 	display: inline-flex;
@@ -574,6 +571,31 @@ nav.main-nav.has-hero.scrolled .nav-identity { opacity: 1; pointer-events: auto;
 }
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+/* Below this width, "Publications / Teaching / Scientific Activities"
+   plus the icon buttons no longer fit on one line without an awkward
+   partial wrap. Collapse the text links behind a hamburger instead. */
+@media screen and (max-width: 640px) {
+	.icon-btn.nav-toggle { display: inline-flex; }
+
+	.nav-links {
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 4px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		padding: 8px 20px 20px;
+		background: rgba(var(--paper-rgb), 0.98);
+		-webkit-backdrop-filter: blur(16px) saturate(180%);
+		backdrop-filter: blur(16px) saturate(180%);
+		border-bottom: 1px solid var(--line);
+	}
+	.nav-controls.open .nav-links { display: flex; }
+	.nav-links a, .nav-links .nav-current { margin-left: 0; }
+}
 
 /* ==========================================================================
    Homepage hero (.profile) — the only page that renders the full
@@ -772,8 +794,6 @@ p.small {
 /* Media Queries */
 @media screen and (max-width: 540px) {
 	nav.main-nav { padding: 14px 20px; }
-	.nav-links a, .nav-links .nav-current { margin: 0 16px 8px 0; }
-	.theme-toggle { margin: 0 0 8px; }
 	#wrapper { padding: 30px 20px 60px 20px; }
 	#wrapper.home { padding: 0 20px 20px; }
 	.profile #profile-wrapper { padding: 20px 20px 0; }

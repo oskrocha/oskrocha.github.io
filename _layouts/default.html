@@ -102,6 +102,18 @@
 
   <script>
     (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var controls = document.querySelector('.nav-controls');
+      if (!toggle || !controls) return;
+      toggle.addEventListener('click', function () {
+        var open = controls.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
       var bar = document.querySelector('.progress-bar');
       var nav = document.querySelector('nav.main-nav');
       var hero = document.querySelector('.profile #avatar');
