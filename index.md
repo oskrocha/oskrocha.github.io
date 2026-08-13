@@ -6,12 +6,12 @@ Advancing the frontiers of Artificial Intelligence to make information discovera
 
 I'm currently an AI Engineer at [LumApps](https://www.lumapps.com), where I focus on AI-driven search relevance and personalization. I'm also a co-founder of [GreenMinds](https://www.greenminds.fr/), a non-profit promoting responsible and sustainable AI.
 
-My main interests are:
-- Search Relevance and Personalization
-- Generative AI (LLMs, RAG)
+My research interests include:
+- Generative AI (LLMs, RAG, Agents)
+- Knowledge Graphs (Graph Representation Learning, Semantic Web)
 - Recommender Systems
-- Graph-based Machine Learning - Graph Representation Learning (GRL)
-- Responsible & Sustainable AI
+
+Applied across e-learning, search, and environmental sustainability.
 
 Previously, I was the Head of AI at Teach on Mars, leading innovation in e-learning with LLMs, semantic search, and graph-based recommendation systems.
 
