@@ -508,19 +508,31 @@ nav.main-nav.has-hero.scrolled .nav-identity { opacity: 1; pointer-events: auto;
 
 .nav-links { display: flex; align-items: center; flex-wrap: wrap; }
 
-.nav-links a {
+.nav-links a,
+.nav-links .nav-current {
 	padding: 8px 4px;
 	margin-left: 16px;
-	color: var(--muted);
 	font: 500 13px var(--font-sans);
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
 	border-bottom: 1px solid transparent;
 }
 
+.nav-links a {
+	color: var(--muted);
+}
 .nav-links a:hover {
 	color: var(--accent);
 	border-color: var(--accent);
+}
+
+/* The page you're already on — not a link, styled to read as "you are
+   here" rather than an identical clickable duplicate of itself. */
+.nav-links .nav-current {
+	color: var(--ink);
+	font-weight: 600;
+	border-color: var(--line-strong);
+	cursor: default;
 }
 
 .theme-toggle {
@@ -749,7 +761,7 @@ p.small {
 /* Media Queries */
 @media screen and (max-width: 540px) {
 	nav.main-nav { padding: 14px 20px; }
-	.nav-links a { margin: 0 16px 8px 0; }
+	.nav-links a, .nav-links .nav-current { margin: 0 16px 8px 0; }
 	.theme-toggle { margin: 0 0 8px; }
 	#wrapper { padding: 30px 20px 60px 20px; }
 	#wrapper.home { padding: 0 20px 20px; }

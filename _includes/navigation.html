@@ -5,9 +5,23 @@
     </a>
 
     <div class="nav-links">
-        <a href="{{ site.baseurl }}publications">Publications </a>
-        <a href="{{ site.baseurl }}teaching">Teaching </a>
-        <a href="{{ site.baseurl }}scientific">Scientific Activities </a>
+        {% if page.url == "/publications/" %}
+        <span class="nav-current">Publications</span>
+        {% else %}
+        <a href="{{ site.baseurl }}publications">Publications</a>
+        {% endif %}
+
+        {% if page.url == "/teaching/" %}
+        <span class="nav-current">Teaching</span>
+        {% else %}
+        <a href="{{ site.baseurl }}teaching">Teaching</a>
+        {% endif %}
+
+        {% if page.url == "/scientific/" %}
+        <span class="nav-current">Scientific Activities</span>
+        {% else %}
+        <a href="{{ site.baseurl }}scientific">Scientific Activities</a>
+        {% endif %}
 
     <!--
     {% if page.url != "/contact/" %}
