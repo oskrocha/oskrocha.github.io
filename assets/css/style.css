@@ -353,6 +353,23 @@ button:focus-visible {
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
+
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		animation: none !important;
+	}
+}
+
+/* Native crossfade between page navigations (Chrome/Edge 126+, cross-document
+   View Transitions). No JS, no-op in unsupported browsers. */
+@view-transition {
+	navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: 0.15s;
+	animation-timing-function: ease;
 }
 
 p a {
